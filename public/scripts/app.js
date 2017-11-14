@@ -1,5 +1,4 @@
-
-
+// function handles the click when I delete a post.
 function handleBodyClick(e) {
 	// if the delete button clicked
 	if (event.target.getAttribute('data-action') === 'delete') {

@@ -124,7 +124,6 @@ module.exports.post = function(request, response) {
 					errors: [{ msg: err.message }],
 				});
 			}
-
 			// redirect to the blog page which has all the articles if success
 			response.redirect('/blog');
 		});

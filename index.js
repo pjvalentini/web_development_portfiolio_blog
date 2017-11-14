@@ -5,7 +5,7 @@ const app = express();
 // var articles;
 
 // parses data with the content type of the application JSON
-app.use(parser.urlencoded({ extended:false }));
+app.use(parser.urlencoded({ extended: false }));
 app.use(parser.json());
 
 // Used for input validation - remember assume all input is bad!
@@ -21,56 +21,56 @@ app.set("view engine", "ejs");
 
 const articlesController = require('./controllers/articles');
 
-// Index page route setup
+// Index page route setup -- good!
 app.get("/", (req, res) => {
 	// Render index.ejs page
 	res.render("index");
 });
 
-// About Page route setup
+// About Page route setup -- good!
 app.get("/about", (req, res) => {
 	// Render index.ejs page
 	res.render("about");
 });
 
-// Contact Page route setup
+// Contact Page route setup -- good!
 app.get("/contact", (req, res) => {
 	// Render index.ejs page
 	res.render("contact");
 });
 
 // map a route to a function in the controller.
-app.get('/blog', articlesController.get);
-app.get('/blog/articles', articlesController.get);
+app.get('/blog', articlesController.get); // route -- good!
+app.get('/articles', articlesController.get); // route -- good!
 
-// Renders the form
-app.get('/blog/articles/create', articlesController.new);
+// Renders the form to add article.
+app.get('/articles/create', articlesController.new); // route -- good!
 
-// Changes the state ans posts the new Article.
-app.post('/blog/articles/create', articlesController.post);
+// Changes the state and posts the new Article. -- route BAD NW!
+app.post('/articles/create', articlesController.post);
 
 // to delete in a form we need to use POST, why?
 // https://stackoverflow.com/questions/165779/are-the-put-delete-head-etc-methods-available-in-most-web-browsers
-app.post('/blog/articles/:id', (request, response) => {
-		// if _method == DELETE
-		if (request.body._method === 'DELETE') {
-			return articlesController.delete(request, response, () => {
-				response.redirect('/');
-			});
-		}
+app.post('/articles/:id', (request, response) => { // works!
+		// if _method === DELETE
+	if (request.body._method === 'DELETE') {
+		return articlesController.delete(request, response, () => {
+			response.redirect('/blog');
+		});
+	}
 		// we don't support post or put (yet) so just redirect user
 		// if anything else
-	response.redirect('/');
+	response.redirect('/blog');
 });
 
-app.delete('/blog/articles/:id', (request, response) => {
+app.delete('/articles/:id', (request, response) => { // works !
 	return articlesController.delete(request, response, () => {
 	// we're not handling errors
 		response.json({ "success": true });
 	});
 });
 
-app.get('/blog/articles/:id', articlesController.show);
+app.get('/articles/:id', articlesController.show); // works!
 
 // adding a catch
 app.get('*', function(req, res) {
