@@ -15,21 +15,21 @@ module.exports.notFound = function(request, response) {
 
 // ================================================
 // (Delete) an article from the model
-module.exports.delete = function(request, response, callback) {
-	const id = request.params.id;
-
-	articles.deleteArticleById(parseInt(id), function(err, list) { // eslint-disable-line
-		if (err) {
-			const message = errors[err.code] ? defaultMessage : 'Try again later';
-
-			// make sure we only render once!!! so return
-			return response.render('404', { message: message });
-		}
-
-		// after delete call the callback function
-		callback();
-	});
-};
+// module.exports.delete = function(request, response, callback) {
+// 	const id = request.params.id;
+//
+// 	articles.deleteArticleById(parseInt(id), function(err, list) { // eslint-disable-line
+// 		if (err) {
+// 			const message = errors[err.code] ? defaultMessage : 'Try again later';
+//
+// 			// make sure we only render once!!! so return
+// 			return response.render('404', { message: message });
+// 		}
+//
+// 		// after delete call the callback function
+// 		callback();
+// 	});
+// };
 
 // ================================================
 // (Get) a list of articles from the model
@@ -83,6 +83,7 @@ module.exports.show = function(request, response) {
 // a user or other source. We use the expressValidator for this
 module.exports.post = function(request, response) {
 	// validate the title
+	console.log(request.body)
 	request
 		.checkBody('title', 'Invalid title')
 		// checking to make sure the request is not empty.
@@ -136,5 +137,6 @@ module.exports.post = function(request, response) {
 // is very bad and therefore we'd likely want to
 // review anything thats saved
 module.exports.new = function(request, response) {
+	console.log(request.body)
 	response.render('new', { title: 'Create new article' });
 };

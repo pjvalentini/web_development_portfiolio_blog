@@ -43,7 +43,7 @@ app.get("/contact", (req, res) => {
 app.get('/blog', articlesController.get); // route -- good!
 app.get('/articles', articlesController.get); // route -- good!
 
-// Renders the form to add article.
+// Renders the form to add articles.
 app.get('/articles/create', articlesController.new); // route -- good!
 
 // Changes the state and posts the new Article. -- route BAD NW!
@@ -63,7 +63,7 @@ app.post('/articles/:id', (request, response) => { // works!
 	response.redirect('/blog');
 });
 
-app.delete('/articles/:id', (request, response) => { // works !
+app.delete('/articles/:id', (request, response) => {
 	return articlesController.delete(request, response, () => {
 	// we're not handling errors
 		response.json({ "success": true });

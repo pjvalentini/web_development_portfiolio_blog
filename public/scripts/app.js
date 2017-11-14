@@ -14,8 +14,8 @@ function deleteArticleById(id, elem) {
 	// we could use css animation instead!!
 	// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 	setTimeout(function() {
-		fetch ('/articles/' + id, { method: 'DELETE' }).then(function() {
-			// this says delete the article and take 3ms
+		fetch('/articles/' + id, { method: 'DELETE' }).then(function() {
+			// this says delete the article and take 1 sec to fade.
 			// fades out and removes it from the DOM.
 			elem.parentElement.removeChild(elem);
 		});
