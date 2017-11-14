@@ -1,0 +1,17 @@
+<% include globals/head %>
+
+    <div class="links">
+      <h1 class="homepage_header">Welcome to PJ's Blog!</h1>
+      <br/>
+      <a href="/articles/create">Add Article</a>
+    </div>
+
+    <main>
+        <div class="articles__list">
+            <% articles.forEach(function(article) { %>
+            <%- include('partials/article-item', {article}); %>
+            <% }) %>
+        </div>
+    </main>
+
+<% include globals/foot %>

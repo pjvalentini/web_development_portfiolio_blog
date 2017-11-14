@@ -1,0 +1,17 @@
+<% include globals/head %>
+
+    <div class="links">
+      <a href="/">Home</a>
+    </div>
+
+    <article>
+      <img src="<%- article.image %>" alt="<%= article.title %>">
+      <div class='article__content'>
+        <h1><%- article.title %></h1>
+        <div class="article__detail-body">
+          <%- article.body %>
+        </div>
+      </div>
+    </article>
+
+<% include globals/foot %>

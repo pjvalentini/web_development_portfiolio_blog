@@ -1,0 +1,307 @@
+/**********************************
+HEADING
+***********************************/
+* {
+  box-sizing: border-box;
+}
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Gafata-Regular", serif;
+  margin: 15px 0;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-family: "Gafata-Regular", serif;
+  font-size: 1em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+/**********************************
+GENERAL
+***********************************/
+
+body {
+  font-family: "Gafata-Regular", serif;
+}
+
+.wrapper {
+  max-width: 940px;
+  min-height: 740px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+
+}
+
+/**********************************
+BODY
+***********************************/
+
+h3 {
+  font-family :"Gafata-Regular", serif;
+  margin: 0 0 1em 0;
+}
+
+p {
+  color: #ff9800;
+  font-family :"WorkSans-Thin", sans-serif;
+}
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  border-right: solid 1.5px #595959
+}
+
+section li a {
+  font-family :"WorkSans-Thin", sans-serif;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+nav li a {
+  color: #6f7072;
+  text-transform: uppercase;
+}
+
+.blog {
+  border-right: none;
+  border-left: solid 1.5px #595959;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 1em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  text-transform: uppercase;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #D8D8D8;
+  box-shadow: inset 0 0 25px 5px rgba(0, 0, 0, .2);
+}
+
+#gallery li a p {
+  font-family: "Work-Sans", sans-serif;
+  margin: 0;
+  padding: 3%;
+  font-size: 0.65em;
+  color: #566167;
+  height: 39px;
+}
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 10%;
+}
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.jobs{
+  padding-left: 30px;
+  font-family :"WorkSans-Thin", sans-serif;
+  font-size: 15px;
+  list-style-type: circle;
+  color: slategray;
+
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+/*Hover color change for contact #,Email, twitter */
+.contact-info li a:hover {
+  color: #ff9900;
+}
+
+/*Hover color chaange for "product photography" <li> item.*/
+.prodphoto a:hover {
+  color: #ff9900;
+}
+
+.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+  /*color: #fff;*/
+  border: 20px solid #acacac;
+  min-height: 800px;
+}
+
+.background {
+  content: "";
+  display: block;
+  position: relative;
+  z-index: -1;
+  opacity:1;
+  background-image: url(../img/orangeback4.jpg);
+  background-repeat: no-repeat;
+}
+
+
+/* White */
+header {
+  border-color: #027906;
+}
+
+/* nav background on mobile */
+nav {
+  background: #027906;
+}
+
+/* logo text */
+h1, h2 {
+  text-transform: uppercase;
+  /*color: #78878e;*/
+  background: -webkit-linear-gradient(-315deg, #ff9800, #636363);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+h3{
+  color: #78878e;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+h4 {
+  color: #FF9800;
+}
+
+/* links */
+a {
+  color: #78878e;
+}
+
+/*twitter handle :hover color change on about page*/
+.anchov:hover {
+  color: #ff9900;
+}
+
+p {
+  color: #78878e;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #78878e;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #6f7072;
+}
