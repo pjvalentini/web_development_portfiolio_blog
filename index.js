@@ -51,7 +51,7 @@ app.post('/articles/create', articlesController.post);
 
 // to delete in a form we need to use POST, why?
 // https://stackoverflow.com/questions/165779/are-the-put-delete-head-etc-methods-available-in-most-web-browsers
-app.post('/articles/:id', (request, response) => { // works!
+app.post('/articles/:id', (request, response) => { // ERRROR 500...
 		// if _method === DELETE
 	if (request.body._method === 'DELETE') {
 		return articlesController.delete(request, response, () => {
