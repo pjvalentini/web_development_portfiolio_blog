@@ -1,11 +1,17 @@
 const express = require("express");
 const parser = require("body-parser");
+const expressValidator = require('express-validator');
 const app = express();
 // var articles;
 
 // parses data with the content type of the application JSON
 app.use(parser.urlencoded({ extended:false }));
 app.use(parser.json());
+
+// Used for input validation - remember assume all input is bad!
+// so lets use a tool designed to make sure we're not saving
+// anything bad
+app.use(expressValidator());
 
 // middleware to serve static assets.
 app.use(express.static('public'));
@@ -33,14 +39,38 @@ app.get("/contact", (req, res) => {
 	res.render("contact");
 });
 
-// blog homepage route
-app.get('/bloghome', articlesController.get);
+// map a route to a function in the controller.
+app.get('/blog', articlesController.get);
+app.get('/blog/articles', articlesController.get);
 
-// blog post page route
-app.get("/blogpost/:id", articlesController.show);
+// Renders the form
+app.get('/blog/articles/create', articlesController.new);
 
-// blog post submit route (building the code for this route...)
-app.get("/blogpost/:id/submit", articlesController.show);
+// Changes the state ans posts the new Article.
+app.post('/blog/articles/create', articlesController.post);
+
+// to delete in a form we need to use POST, why?
+// https://stackoverflow.com/questions/165779/are-the-put-delete-head-etc-methods-available-in-most-web-browsers
+app.post('/blog/articles/:id', (request, response) => {
+		// if _method == DELETE
+		if (request.body._method === 'DELETE') {
+			return articlesController.delete(request, response, () => {
+				response.redirect('/');
+			});
+		}
+		// we don't support post or put (yet) so just redirect user
+		// if anything else
+	response.redirect('/');
+});
+
+app.delete('/blog/articles/:id', (request, response) => {
+	return articlesController.delete(request, response, () => {
+	// we're not handling errors
+		response.json({ "success": true });
+	});
+});
+
+app.get('/blog/articles/:id', articlesController.show);
 
 // adding a catch
 app.get('*', function(req, res) {
