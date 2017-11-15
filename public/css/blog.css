@@ -47,6 +47,8 @@ table {
 }
 body {
 	background: #edb259;
+	/*background-image: url(../img/orangeback4.jpg);
+  background-repeat: no-repeat;*/
   color: #8b8b8b;
   font-family: 'Arial', sans-serif;
 }
@@ -124,7 +126,7 @@ h2 {
 	position: relative;
 	border: 10px solid transparent;
 	border-radius: 20px;
-	box-shadow: 10px 10px 5px slategrey;
+	box-shadow: 10px 10px 5px #c2c2c2;
 }
 
 .article-item:hover {
