@@ -49,9 +49,9 @@ app.get('/articles/create', articlesController.new); // route -- good!
 // Changes the state and posts the new Article. -- route BAD NW!
 app.post('/articles/create', articlesController.post);
 
-// to delete in a form we need to use POST, why?
+// to delete in a form we need to use POST
 // https://stackoverflow.com/questions/165779/are-the-put-delete-head-etc-methods-available-in-most-web-browsers
-app.post('/articles/:id', (request, response) => { // ERRROR 500...
+app.post('/articles/:id', (request, response) => { // ERROR 500...
 		// if _method === DELETE
 	if (request.body._method === 'DELETE') {
 		return articlesController.delete(request, response, () => {

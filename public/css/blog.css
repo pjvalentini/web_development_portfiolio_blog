@@ -46,7 +46,7 @@ table {
 	box-sizing: border-box;
 }
 body {
-	background: #ff9900;
+	background: #edb259;
   color: #8b8b8b;
   font-family: 'Arial', sans-serif;
 }
@@ -123,6 +123,8 @@ h2 {
 	background: #f7f7f7;
 	position: relative;
 	border: 10px solid transparent;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px slategrey;
 }
 
 .article-item:hover {
@@ -183,6 +185,7 @@ article img {
 
 .links {
 	margin: 10px auto;
+	margin-left: 38px;
 }
 
 .links a {
