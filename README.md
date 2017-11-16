@@ -5,12 +5,26 @@ This is my designer/web development website.
 I have recently upgraded it with a blog built in node using express and setting
 it up with an MVC architecture, and using ejs templates.
 
-Dependencies :
+Instructions on how to run:
 
-  "body-parser": "^1.17.2",
-  "ejs": "^2.5.6",
-  "express": "^4.15.3",
-  "jsonfile": "^3.0.1"
+  - The site currently runs on localhost:3000 (will be posting to heroku)
+  - You can run the site by typing - nodemon index.js - in the terminal
+  - Navigate through the site as you wish, you can click on the blog button in the nav background
+    when you get to the blog home you can check out the articles or even post one yourself.
+
+  - Posting Articles: You have the option to create your article with a form that will guide you to
+    choose a title, upload an image and type your article as well.
+
+This website was built with HTML, CSS, and JavaScript on the fromt end. Node and Express on the back end.
+
+Dependencies :
+"body-parser": "^1.18.2",
+"ejs": "^2.5.7",
+"express": "^4.16.2",
+"express-validator": "^4.3.0",
+"jsonfile": "^4.0.0",
+"pug": "^2.0.0-rc.4",
+"util": "^0.10.3"
 
 This site now contains a model, view and controller.
 
@@ -38,5 +52,5 @@ This site now contains a model, view and controller.
   - Globals take care or any repeating code in the header and footer of the index,
     about, contact and 404 ejs templates.
 
-  - Partials take care of any repeating code in the blogheader, blogfooter, blognavbar,
+  - Partials take care of any repeating code in the article-item.ejs,
     and form-comments ejs templates.

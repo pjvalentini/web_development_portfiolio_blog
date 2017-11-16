@@ -15,21 +15,21 @@ module.exports.notFound = function(request, response) {
 
 // ================================================
 // (Delete) an article from the model
-// module.exports.delete = function(request, response, callback) {
-// 	const id = request.params.id;
-//
-// 	articles.deleteArticleById(parseInt(id), function(err, list) { // eslint-disable-line
-// 		if (err) {
-// 			const message = errors[err.code] ? defaultMessage : 'Try again later';
-//
-// 			// make sure we only render once!!! so return
-// 			return response.render('404', { message: message });
-// 		}
-//
-// 		// after delete call the callback function
-// 		callback();
-// 	});
-// };
+module.exports.delete = function(request, response, callback) {
+	const id = request.params.id;
+
+	articles.deleteArticleById(parseInt(id), function(err, list) { // eslint-disable-line
+		if (err) {
+			const message = errors[err.code] ? defaultMessage : 'Try again later';
+
+			// make sure we only render once!!! so return
+			return response.render('404', { message: message });
+		}
+
+		// after delete call the callback function
+		callback();
+	});
+};
 
 // ================================================
 // (Get) a list of articles from the model
