@@ -77,10 +77,15 @@ main {
 
 h1 {
   margin-top: 20px;
+	padding-bottom: 10px;
 	font-size: 3em;
 	font-weight: 700;
 	/*font-family: 'Zilla Slab', serif;*/
 	font-family: "Gafata-Regular", serif;
+}
+
+.homepage_header {
+	padding-bottom: 0px
 }
 
 .blogatag {
@@ -98,6 +103,7 @@ h2 {
 
 .articles__list {
 	padding: 16px;
+	margin-top: -72px;
 }
 
 .errors {
@@ -200,6 +206,7 @@ article img {
 	border: 0;
 	font-size: 25px;
 	margin-right: 10px;
+	font-family: "Gafata-Regular", serif;
 }
 
 .links a:hover {
