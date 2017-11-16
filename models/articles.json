@@ -1,37 +1,16 @@
 [
   {
-    "id": 1510685834131,
-    "title": "Hello",
-    "image": "https:&#x2F;&#x2F;unsplash.it&#x2F;960&#x2F;504",
-    "body": "This is a new article you can post\r\n",
-    "description": "This is a new article you can post\r\n"
+    "id": 1510801480849,
+    "title": "Coding in Aviation",
+    "image": "https:&#x2F;&#x2F;drscdn.500px.org&#x2F;photo&#x2F;109607499&#x2F;m%3D900&#x2F;v2?webp=true&amp;sig=feb1de269343e8fe404b738540fb3fc13cf732df14a81835b808b1a8f651e0f6",
+    "body": "Here’s a good question: who’s flying the plane, the pilot or the autopilot? Although it can’t be known exactly when the pilot is going to switch to autopilot, it can be assumed he will during the flight. But, even if he didn’t use the autopilot, human and machine are still working together to navigate through the clouds because computer-assisted flight systems are as integral to flying as a trained pilot is.\r\n\r\nElectronic Control Systems\r\n\r\nIn order to build a computer capable of flying an airplane, an intense amount of coding needs to be done. Autopilots must be able to detect objects in the flight path, follow the flight route, and in some cases land the aircraft. This is done using the Electronic Control System (ECS), which is embedded in the cock pit.\r\n\r\nElectronics Tutorials defines ECSs as the “physical interconnection of components, or parts, that gathers various amounts of information together with the aid of input devices such as sensors, responds in some way to this information and then uses electrical energy in the form of an output action to control a physical process or perform some type of mathematical operation on the signal.”\r\n\r\nThe high-tech coding that transforms one signal into another keeps millions of fliers safe every single day. Autopilot isn’t just a single application, but rather the entire ECS working to keep everyone safe and it begins with something as simple yet critical as an industrial PC board or computer-on-module platform, and grows to initiate and respond to a myriad of commands, as well as enact emergency safety precautions. It that makes you nervous, it shouldn’t. Human error is more likely than computer error, and yet with a human in the cockpit, you’re provided an extra level of security.\r\n\r\nRecreating it as Practice\r\n\r\nFancy trying your hand building a cockpit? If you know coding and you can handle the peripherals, you could simulate the cockpit at home. Understand that unless you have millions of dollars, this won’t be a too-scale cockpit. Instead, it will be more RC-size than Boeing-size.\r\n\r\nYou’ll need a transmitter, a receiver, an electronic speed controller (ESC), a battery, motor, and a servos. You connect the pieces to build a small scale model airplane, which can be flown using the transmitter. For full detailed instructions, check out the guide on Instructables.com.\r\n\r\nJobs for Coders in the Aviation Industry\r\n\r\nIf coding and aviation are more than a hobby to you, you may want to consider getting a job in the field. There are a number of jobs that would be desirable to competent coders. Here’s is a sampling of those jobs:\r\n\r\n• Avionics Technician – Handles electronic maintenance and repair. It’s the responsibility of the technician to run cabling, mount antennas, and make navigation and engine monitoring connections.\r\n• System Trouble-shooters – Diagnoses and remedies issues. It is important trouble-shooting be done quickly and efficiently, so pilots can get their aircraft back in the sky.\r\n\r\n• Bench Technicians – Works on navigation and communication devices, such as radios, autopilots, and computers. Job requires advanced skills.\r\nAmerica is considered the industry leader in commercial airline safety. Although the rules regarding a pilot’s conduct and training are strict, it’s not just the pilots that have helped the country achieve this safety recognition. It’s also due to the airplane’s advanced components. Inside every American commercial aircraft, there is an ECS designed with safety in mind. Above all else, the most important thing is the safety of the humans onboard. So, next time you’re concerned about the autopilot, don’t be. It exists, so the place stays safe.\r\n\r\nWritten by Jane Brown",
+    "description": "Here’s a good question: who’s flying the plane, the pilot or the autopilot? Although it can’t be known exactly when the pilot is going to switch to autopilot, it can be assumed he will during the flig"
   },
   {
-    "id": 1510685884456,
-    "title": "New Article",
-    "image": "https:&#x2F;&#x2F;unsplash.it&#x2F;960&#x2F;504",
-    "body": "this is also a new er article by PJ Valentini",
-    "description": "this is also a new er article by PJ Valentini"
-  },
-  {
-    "id": 1510698688680,
-    "title": "saldasldk",
-    "image": "https:&#x2F;&#x2F;unsplash.it&#x2F;960&#x2F;504",
-    "body": "asl;dkas;dk",
-    "description": "asl;dkas;dk"
-  },
-  {
-    "id": 1510700248509,
-    "title": "askldjasdjadj",
-    "image": "https:&#x2F;&#x2F;unsplash.it&#x2F;960&#x2F;504",
-    "body": "lsdasldkaslkd",
-    "description": "lsdasldkaslkd"
-  },
-  {
-    "id": 1510701101772,
-    "title": "sadasdasd",
-    "image": "https:&#x2F;&#x2F;unsplash.it&#x2F;960&#x2F;504",
-    "body": "asdasdas",
-    "description": "asdasdas"
+    "id": 1510801751368,
+    "title": "Learning the ropes of coding",
+    "image": "http:&#x2F;&#x2F;cdn.skilledup.com&#x2F;wp-content&#x2F;uploads&#x2F;2015&#x2F;06&#x2F;young-people-learning-to-code-Feature_1290x688_KL.jpg",
+    "body": "Programming is one of the most valuable skills you can pick up in these modern times, whether for career prospects or to stretch your brain and create something awesome. If you're just getting started on your coding journey, here are ten tips and resources to set you off on the right foot.\r\n\r\nThe direction you go in will depend in large part on why you want to learn to code in the first place and how much time you have to devote to learning. If you want to be a professional programmer, signing up college courses might be your best bet. (Google has a list of suggested skills and courses for would-be software engineers.) If you want to build websites or games for fun (and possibly profit) in your spare time, interactive tutorials might be better. Bloc has a comparison of course options based on workload, cost, and reason you're picking up programming. And if you're still deciding on a tech career, Switch will recommend one based on your interests.\r\n\r\nThere's no one \"best\" programming language, and once you've learned one, it's fairly easy to pick up another, so don't get hung too up on choosing your first language. That said, some languages are more beginner-friendly than others. The language you choose to start with might depend, again, on your purpose. (For example, if you want to write an iOS app, you'll need to learn Swift.) There's a case for starting with C if you're serious about programming, although higher-level languages, like Python, are easier to jump into right away. Here's an infographic comparing a few popular programming languages.\r\n\r\nNo matter which language or learning method you choose, you should start at the very beginning (a very good place to start). When David Sinsky taught himself to code in eight weeks, for example, he spent one weekend getting an introductory grasp of Python and one weekend getting an introductory understanding of Django—going through the tutorial, deleting all of the tutorial code, and working through the tutorial again from scratch. Start with the basics and be patient with yourself as you progress. To take your first coding project from start to finish, break down the project into simple steps. And if one method of learning isn't working for you (e.g., books), try another method before giving up.\r\n\r\nEven toddlers are learning to code these days. That's actually a great thing for all of us. Although many of the programs designed to teach kids to code are very simplistic, many of them, like Scratch, are suitable for all ages. It doesn't matter how old you are; even kids' animation apps can get you started with the basics of programming (edX has a new course on Programming in Scratch, by the way).\r\n\r\nWritten by \r\nMelanie Pinola",
+    "description": "Programming is one of the most valuable skills you can pick up in these modern times, whether for career prospects or to stretch your brain and create something awesome. If you're just getting started"
   }
 ]
