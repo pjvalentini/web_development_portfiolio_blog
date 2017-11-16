@@ -41,8 +41,8 @@ This site now contains a model, view and controller.
 
   - The Model:
     - Uses the jsonfile npm package to do a few things to the articles.json file to
-      get it ready to be read and then the data can be extracted from it an setup to
-      create the view bloghome.ejs. and blogpost.ejs
+      get it ready to be read and then the data can be extracted from it and setup to
+      create the 3 views for the blog pages.
 
   - The Views:
     - there are 6 views with the 404.ejs as the most recent to be added. This template
@@ -54,3 +54,5 @@ This site now contains a model, view and controller.
 
   - Partials take care of any repeating code in the article-item.ejs,
     and form-comments ejs templates.
+
+This is a continuing work in progress...
