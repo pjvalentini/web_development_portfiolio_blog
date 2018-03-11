@@ -77,7 +77,8 @@ app.get('*', function(req, res) {
 	res.status(404).send('Page not found!');
 });
 
+const PORT = process.env.PORT || 3000;
 // server setup on localhost:3000.
-const server = app.listen(3000, () => {
+const server = app.listen(PORT, () => {
 	console.log('server started on port', server.address().port);
 });
