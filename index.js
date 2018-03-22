@@ -40,18 +40,18 @@ app.get("/contact", (req, res) => {
 });
 
 // map a route to a function in the controller.
-app.get('/blog', articlesController.get); // route -- good!
-app.get('/articles', articlesController.get); // route -- good!
+app.get('/blog', articlesController.get);
+app.get('/articles', articlesController.get);
 
 // Renders the form to add articles.
-app.get('/articles/create', articlesController.new); // route -- good!
+app.get('/articles/create', articlesController.new);
 
-// Changes the state and posts the new Article. -- route BAD NW!
+// Changes the state and posts the new Article. --
 app.post('/articles/create', articlesController.post);
 
 // to delete in a form we need to use POST
 // https://stackoverflow.com/questions/165779/are-the-put-delete-head-etc-methods-available-in-most-web-browsers
-app.post('/articles/:id', (request, response) => { // ERROR 500...
+app.post('/articles/:id', (request, response) => {
 		// if _method === DELETE
 	if (request.body._method === 'DELETE') {
 		return articlesController.delete(request, response, () => {
@@ -70,7 +70,7 @@ app.delete('/articles/:id', (request, response) => {
 	});
 });
 
-app.get('/articles/:id', articlesController.show); // works!
+app.get('/articles/:id', articlesController.show); 
 
 // adding a catch
 app.get('*', function(req, res) {

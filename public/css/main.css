@@ -176,6 +176,18 @@ PAGE: ABOUT
   border-radius: 10%;
 }
 
+.gitHubTag {
+  margin-left: 189px;
+}
+
+.gitHubLink:hover {
+  color: #ff9900;
+}
+
+.skillsDiv {
+  margin-left: 189px;
+}
+
 /**********************************
 PAGE: CONTACT
 ***********************************/
