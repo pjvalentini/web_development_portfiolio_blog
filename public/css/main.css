@@ -17,7 +17,7 @@ header {
 }
 
 h1 {
-  font-family: "Gafata-Regular", sans-serif;
+  font-family: "Gafata", sans-serif;
   margin: 15px 0;
   font-size: 50px;
   font-weight: normal;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Gafata-Regular", sans-serif;
+  font-family: "Gafata", sans-serif;
   font-size: 1em;
   margin: -5px 0 0;
   font-weight: normal;
@@ -36,7 +36,7 @@ GENERAL
 ***********************************/
 
 body {
-  font-family: "Gafata-Regular", sans-serif;
+  font-family: "Gafata", sans-serif;
 }
 
 .wrapper {
@@ -61,7 +61,7 @@ BODY
 ***********************************/
 
 h3 {
-  font-family :"Gafata-Regular", sans-serif;
+  font-family :"Gafata", sans-serif;
   margin: 0 0 1em 0;
 }
 
@@ -179,7 +179,11 @@ PAGE: ABOUT
   margin-left: 189px;
 }
 
-.gitHubLink:hover {
+.gitHubLink {
+  color: #ff9900;
+}
+
+.anchor {
   color: #ff9900;
 }
 
@@ -298,10 +302,6 @@ a {
   color: #78878e;
 }
 
-/*twitter handle :hover color change on about page*/
-.anchov:hover {
-  color: #ff9900;
-}
 
 p {
   color: #78878e;
