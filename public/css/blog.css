@@ -66,6 +66,15 @@ input, textarea {
 	font-size: 16px;
 }
 
+.submitBtn {
+	background-color: #cdcdcd;
+}
+
+.submitBtn:hover {
+	color: #ffffff;
+	background-color: green;
+}
+
 textarea {
 	min-height: 30vh;
 }
