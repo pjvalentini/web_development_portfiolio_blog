@@ -81,7 +81,7 @@ h1 {
 	font-size: 3em;
 	font-weight: 700;
 	/*font-family: 'Zilla Slab', serif;*/
-	font-family: "Gafata-Regular", serif;
+	font-family: "Gafata-Regular", sans-serif;
 }
 
 .homepage_header {
@@ -89,7 +89,7 @@ h1 {
 }
 
 .blogatag {
-	font-family: "Gafata-Regular", serif;
+	font-family: "Gafata-Regular", sans-serif;
 }
 
 h2 {
@@ -206,7 +206,7 @@ article img {
 	border: 0;
 	font-size: 25px;
 	margin-right: 10px;
-	font-family: "Gafata-Regular", serif;
+	font-family: "Gafata-Regular", sans-serif;
 }
 
 .links a:hover {

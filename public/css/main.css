@@ -17,7 +17,7 @@ header {
 }
 
 h1 {
-  font-family: "Gafata-Regular", serif;
+  font-family: "Gafata-Regular", sans-serif;
   margin: 15px 0;
   font-size: 50px;
   font-weight: normal;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Gafata-Regular", serif;
+  font-family: "Gafata-Regular", sans-serif;
   font-size: 1em;
   margin: -5px 0 0;
   font-weight: normal;
@@ -36,7 +36,7 @@ GENERAL
 ***********************************/
 
 body {
-  font-family: "Gafata-Regular", serif;
+  font-family: "Gafata-Regular", sans-serif;
 }
 
 .wrapper {
@@ -61,13 +61,13 @@ BODY
 ***********************************/
 
 h3 {
-  font-family :"Gafata-Regular", serif;
+  font-family :"Gafata-Regular", sans-serif;
   margin: 0 0 1em 0;
 }
 
 p {
   color: #ff9800;
-  font-family :"WorkSans-Thin", sans-serif;
+  font-family :"Work Sans", sans-serif;
 }
 
 
@@ -93,7 +93,7 @@ nav li {
 }
 
 section li a {
-  font-family :"WorkSans-Thin", sans-serif;
+  font-family :"Work Sans", sans-serif;
 }
 
 nav a {
@@ -201,7 +201,7 @@ PAGE: CONTACT
 
 .jobs{
   padding-left: 30px;
-  font-family :"WorkSans-Thin", sans-serif;
+  font-family :"Work Sans", sans-serif;
   font-size: 15px;
   list-style-type: circle;
   color: slategray;
